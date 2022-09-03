@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title></title>
+</head>
+<body>
+<form  >
+  <label for="fname">First name:</label><br>
+  <input  id="number1"><br>
+  <label for="lname">Last name:</label><br>
+  <input  id="number2" ><br><br>
+  <button type="button" value="Submit" onclick="addition()">Add</button>
+  <div id="addMessage"></div>
+</form> 
+
+<h2>Introduction of javaScript</h2>
+
+<button type="button" id ="message" onclick="display()">Click Me</button>
+	<script>
+function display() {
+	console.log("calling display")
+	var displayMessage=document.getElementById("message");
+    
+    console.log("displayMessage")
+    displayMessage.innerHTML="calling display"
+}
+</script>
+
+<script >
+function addition(){
+	console.log("calling addition")
+	var firstElement=
+	document.getElementById("number1")
+	console.log(firstElement)
+	console.log(firstElement.value)
+
+	var secondElement =
+	document.getElementById("number2")
+	console.log(secondElement)
+	console.log(secondElement.value)
+	var result= parseInt(firstElement.value) + parseInt(secondElement.value)
+	var output=document.getElementById("addMessage")
+	console.log(output)
+	output.innerHTML=result
+}	
+
+</script>
+</body>
+</html>
