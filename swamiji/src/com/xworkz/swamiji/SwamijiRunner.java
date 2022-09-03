@@ -24,8 +24,8 @@ public class SwamijiRunner {
 	dto2.setNoOfCases(15);
 	System.out.println("Name :"+dto2.getName()+ "  NickName : "+dto2.getNickName()
 	+"  Age  :"+dto2.getAge()+"  NamDressCode :"+dto2.getDressCode()+"  NoOfCases :"+dto2.getNoOfCases());
-Boolean b	=dto.equals(dto2);
-	System.out.println(b);
+     Boolean b	=dto.equals(dto2);
+	  System.out.println(b);
 	//System.out.println(dto.equals(dto2));
 	//System.out.println(dto.hashCode());
 	//System.out.println(dto2.hashCode());
